@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Форма заказа обеда</title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/normalize.css" rel="stylesheet">
+	    <link href="css/styles.css" rel="stylesheet">
+        <!--Bootstrap3-->
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+      <div class="main">
+       <article>
+
+        <h1 class="main__title">Форма заказа обеда</h1>
+
+         <div class="container">
+
+            <form id="lunch" name="lunch" action="/order_lunch" method="POST" enctype="multipart/form-data">
+                <!-- Form Name -->
+                <legend>Выберите меню</legend>
+
+                <!-- Text input-->
+                <label class="control-label" for="salad">Выберите салат</label>
+                <div class="salad">
+                    <select id="salad" name="salad" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- греческий (100р)</option>
+                        <option value="2">- цезарь</option>
+                    </select>
+                 </div>
+                 <div class="cesar-salad">
+                    <select id="cesar-salad" name="cesar-salad" class="form-control">
+                        <option value="0" selected>-</option>
+                        <option value="1">- с курицей (100р)</option>
+                        <option value="2">- с креветками (150р)</option>
+                    </select>
+                </div>
+
+                <!-- Text input-->
+                <div class="first-course">
+                    <label class="control-label" for="first-course">Первое блюдо</label>
+                    <select id="first-course" name="first-course" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- борщ (100р)</option>
+                        <option value="2">- с помпушкой (5р)</option>
+                        <option value="3">- сырный суп (70р)</option>
+                        <option value="4">- грибной суп (60р)</option>
+                    </select>
+                </div>
+
+                <!-- Text input-->
+                <label class="control-label" for="second-course">Второе блюдо</label>
+                <div class="second-course">
+                    <select id="second-course" name="second-course" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- курица (100р)</option>
+                        <option value="2">- рыба (120р)</option>
+                        <option value="3">- свинина (150р)</option>
+                        <option value="4">- говядина (150р)</option>
+                    </select>
+                </div>
+                <div class="second-course__degree-roasting">
+                    <select id="degree-roasting" name="degree-roasting" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- rare</option>
+                        <option value="2">- medium</option>
+                        <option value="3">- well done</option>
+                    </select>
+                </div>
+                <div class="second-course__garnish">
+                    <label class="control-label" for="garnish">Гарнир ко второму</label>
+                    <select id="garnish" name="garnish" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- рис (50р)</option>
+                        <option value="2">- картофель фри (30р)</option>
+                        <option value="3">- овощи на гриле (30р)</option>
+                    </select>
+                </div>
+
+                <!-- Text input-->
+                <label class="control-label" for="beverage">Напиток</label>
+                <div class="beverage">
+                    <select id="beverage" name="beverage" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- сок</option>
+                        <option value="2">- кофе</option>
+                        <option value="3">- чай</option>
+                    </select>
+                </div>
+                <div class="beverage-juice">
+                    <select id="beverage-juice" name="beverage-juice" class="form-control">
+                        <option value="0" selected>-</option>
+                        <option value="1">- апельсиновый (50р)</option>
+                        <option value="2">- яблочный (50р)</option>
+                    </select>
+                </div>
+                <div class="beverage-coffee">
+                    <select id="beverage-coffee" name="beverage-coffee" class="form-control">
+                        <option value="0" selected>-</option>
+                        <option value="1">- эспрессо (80р)</option>
+                        <option value="2">- американо (80р)</option>
+                    </select>
+                </div>
+                <div class="beverage-tea">
+                    <select id="beverage-tea" name="beverage-tea" class="form-control">
+                        <option value="0" selected>-</option>
+                        <option value="1">- черный (30р)</option>
+                        <option value="2">- зеленый (30р)</option>
+                    </select>
+                </div>
+
+                <div class="sugar">
+                    <label class="col-md-2 control-label" for="checkboxes_sugar">Сахар</label>
+                    <div class="col-md-2">
+                        <label class="checkbox-inline" for="checkboxes_sugar">
+                            <input type="checkbox" name="checkboxes_sugar" id="checkboxes_sugar" value="1">
+                            Да
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="bread">
+                    <label class="control-label" for="bread">Хлеб</label>
+                    <select id="bread" name="bread" class="form-control">
+                        <option value="0" selected>- выбрать</option>
+                        <option value="1">- белый (10р)</option>
+                        <option value="2">- черный (10р)</option>
+                    </select>
+                </div>
+
+                <div class="contact">
+                    <legend>Ваши контактные данные</legend>
+                </div>
+
+                <!-- Text input-->
+                <div class="control-group" id="control-group__name">
+                    <label class="control-label" for="name">Ваше имя</label>
+                    <div class="controls">
+                        <input id="name" name="name" type="text" placeholder="">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="control-group" id="control-group__family">
+                    <label class="control-label" for="family">Ваша фамилия</label>
+                    <div class="controls">
+                        <input id="family" name="family" type="text" placeholder="">
+
+                    </div>
+                </div>
+
+                <!-- Number input-->
+                <div class="control-group" id="control-group__phone">
+                    <label class="control-label" for="phone">Ваш телефон</label>
+                    <div class="controls">
+                        <input id="phone" name="phone" type="number" placeholder="(+7)">
+
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="control-group" id="control-group__add-submit">
+                    <label class="control-label" for="add-submit"></label>
+                    <div class="controls">
+                        <button id="add-submit" name="add-submit" class="btn btn-success">Заказать обед</button>
+                    </div>
+                </div>
+            </form>
+
+            <h2 id="tables-bordered" class="heading">Данные по вашему заказу</h2>
+            <div class="bs-example table-order">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Салат</th>
+                            <th>Первое блюдо</th>
+                            <th>Второе блюдо</th>
+                            <th>Напиток</th>
+                            <th>Хлеб</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="order__salad"></td>
+                            <td id="order__first"></td>
+                            <td id="order__second"></td>
+                            <td id="beverage"></td>
+                            <td id="bread"></td>
+                        </tr>
+                        <tr>
+                            <td colspan=5><h3>Итого:</h3><p id="summa__order"></p></td>
+                        </tr>
+                  </tbody>
+                </table>
+            </div>
+
+            <p class="update__link"><a href="/order_lunch">Обновить</a></p>
+
+         </div>
+
+       </article>
+      </div>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="js/order_lunch.js"></script>
+    </body>
+</html>
