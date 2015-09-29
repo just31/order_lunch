@@ -252,35 +252,134 @@
     opacity: 0;
 }
 
-.popup__cnt {
-    display: inline-block;
-    width: 270px;
-    height: 144px;
-    margin-left: 10px;
-    font-size: 12px;
-    font-family: inherit;
-    color: #594540;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    background: #fff;
-    -webkit-border-radius: 5px;
-    -webkit-background-clip: padding-box;
-    -moz-border-radius: 5px;
-    -moz-background-clip: padding;
-    border-radius: 5px;
-    background-clip: padding-box;
-    margin-right: 18px;
-    margin-bottom: 20px;
-    padding: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    border: 1px solid #EFCB00; border-radius: 5px;
+/* Адаптивный дизайн */
+@media screen and (min-width: 320px) and (max-width:767px) {
+
+    .cesar-salad select[id="cesar-salad"] {
+        float: none;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .second-course__degree-roasting select[id="degree-roasting"] {
+        float: none;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .beverage-juice select[id="beverage-juice"] {
+        float: none;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .beverage-coffee select[id="beverage-coffee"] {
+        float: none;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .beverage-tea select[id="beverage-tea"] {
+        float: none;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .table-bordered th {
+        font-size: 10px;
+    }
+
+    .table-bordered td {
+        font-size: 10px;
+    }
+
+    .cesar-salad-before, .degree-roasting-before, .beverage-before-juice,
+        .beverage-before-coffee, .beverage-before-tea {
+            margin-top: 7px;
+            margin-left: 2px;
+            font-size: 10px;
+            font-size: 13px;
+            font-weight: bolder;
+            font-style: italic;
+    }
+
 }
 
-.modal-title {
-    font-family: inherit;
-    font-weight: normal;
-    font-size: 20px;
-    color: #594540 !important;
+@media screen and (min-width: 480px) and (max-width:639px) {
+
+    .cesar-salad select[id="cesar-salad"], .second-course__degree-roasting select[id="degree-roasting"],
+        .beverage-juice select[id="beverage-juice"], .beverage-coffee select[id="beverage-coffee"],
+            .beverage-tea select[id="beverage-tea"] {
+                margin-left: 151px;
+    }
+
+    .table-bordered th {
+        font-size: 11px;
+    }
+
+    .table-bordered td {
+        font-size: 11px;
+    }
+
+    .cesar-salad-before, .degree-roasting-before, .beverage-before-juice,
+        .beverage-before-coffee, .beverage-before-tea {
+            margin-left: 151px;
+    }
+
+}
+
+
+@media screen and (min-width: 640px) and (max-width:767px) {
+
+    .cesar-salad select[id="cesar-salad"], .second-course__degree-roasting select[id="degree-roasting"],
+        .beverage-juice select[id="beverage-juice"], .beverage-coffee select[id="beverage-coffee"],
+            .beverage-tea select[id="beverage-tea"] {
+                margin-left: 151px;
+    }
+
+    .table-bordered th {
+        font-size: 12px;
+    }
+
+    .table-bordered td {
+        font-size: 12px;
+    }
+
+    .cesar-salad-before, .degree-roasting-before, .beverage-before-juice,
+        .beverage-before-coffee, .beverage-before-tea {
+            margin-left: 151px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+    .cesar-salad select[id="cesar-salad"] {
+        margin-right: 39.5px;
+    }
+
+    .second-course__degree-roasting select[id="degree-roasting"] {
+        margin-right: 56px;
+    }
+
+    .beverage-juice select[id="beverage-juice"] {
+        margin-right: 90px;
+    }
+
+    .beverage-coffee select[id="beverage-coffee"] {
+        margin-right: 75px;
+    }
+
+    .beverage-tea select[id="beverage-tea"] {
+        margin-right: 88px;  
+    }
+
+    .table-bordered th {
+        font-size: 13px;
+    }
+
+    .table-bordered td {
+        font-size: 13px;
+    }
+
 }
